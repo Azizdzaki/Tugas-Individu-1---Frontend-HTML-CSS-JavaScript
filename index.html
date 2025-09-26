@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Hukum Ohm</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <h2>Kalkulator Hukum Ohm</h2>
+        <div class="theory">
+            <p><strong>Hukum Ohm</strong> menyatakan bahwa arus listrik yang mengalir melalui sebuah penghantar selalu berbanding lurus dengan beda potensial yang diterapkan kepadanya.</p>
+            <p class="formula">Rumus: I = V / R</p>
+            <ul>
+                <li>I = Arus (Ampere)</li>
+                <li>V = Tegangan (Volt)</li>
+                <li>R = Hambatan (Ohm)</li>
+            </ul>
+        </div>
+        <div class="input-group">
+            <label for="voltage">Tegangan (V)</label>
+            <input type="number" id="voltage" placeholder="Masukkan tegangan">
+        </div>
+        <div class="input-group">
+            <label for="resistance">Hambatan (Ω)</label>
+            <input type="number" id="resistance" placeholder="Masukkan hambatan">
+        </div>
+        <div class="input-group">
+            <label for="current">Arus (A)</label>
+            <input type="number" id="current" placeholder="Masukkan arus">
+        </div>
+        <div class="buttons">
+            <button onclick="calculate('current')">Hitung Arus</button>
+            <button onclick="calculate('voltage')">Hitung Tegangan</button>
+            <button onclick="calculate('resistance')">Hitung Hambatan</button>
+        </div>
+        <div id="result"></div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
