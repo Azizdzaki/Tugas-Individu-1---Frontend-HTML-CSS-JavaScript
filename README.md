@@ -33,5 +33,3 @@ kalkulator-ohm/
 └── js/
     └── main.js
 ```
-
-Dibuat untuk Tugas Mata Kuliah TPB ITB.
